@@ -110,14 +110,6 @@ class Robot(Point):
         else:
             print('O Robo chegou o fim da tela')
 
-
-# -------------------------------------
-
-r1 = Robot(440, 240, 0)
-reward1 = Reward(500, 200)
-reward2 = Reward(500, 400)
-reward3 = Reward(760, 200)
-
 # ========================================
 
 def bt_start():
@@ -202,6 +194,12 @@ def bt_click_Right():
 
 # ---------------------------------
 
+r1 = Robot(440, 240, 0)
+reward1 = Reward(500, 200)
+reward2 = Reward(500, 400)
+reward3 = Reward(760, 200)
+
+# -------------------------------------
 score = Label(window, text='Score: ' + str(r1.cont), bg='black', foreground='white')
 score.place(x=700, y=10)
 score['font'] = ('Arial', '10', 'bold')
