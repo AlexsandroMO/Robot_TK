@@ -121,20 +121,7 @@ reward3 = Reward(760, 200)
 # ========================================
 
 def bt_start():
-    r1.x = 440
-    r1.y = 240
-    r1.cont = 0
-    reward1.x = randint(0, 500)
-    reward1.y = randint(0, 400)
-    reward2.x = randint(0, 500)
-    reward2.y = randint(0, 400)
-    reward3.x = randint(0, 500)
-    reward3.y = randint(0, 400)
-
-    reward1.existe = True
-    reward2.existe = True
-    reward3.existe = True
-
+   
     r1.win.destroy()
 
     reward_A = Label(window, text='X', bg='black', foreground="yellow")
@@ -152,6 +139,21 @@ def bt_start():
     score = Label(window, text='Score: ' + str(r1.cont), bg='black', foreground='white')
     score.place(x=700, y=10)
     score['font'] = ('Arial', '10', 'bold')
+
+    r1.x = 440
+    r1.y = 240
+    r1.cont = 0
+
+    reward1.x = randint(0, 500)
+    reward1.y = randint(0, 400)
+    reward2.x = randint(0, 500)
+    reward2.y = randint(0, 400)
+    reward3.x = randint(0, 500)
+    reward3.y = randint(0, 400)
+
+    reward1.existe = True
+    reward2.existe = True
+    reward3.existe = True
 
 def bt_click_UP():
 
